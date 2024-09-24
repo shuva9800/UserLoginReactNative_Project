@@ -10,7 +10,7 @@ const createToken = (userId) => {
 
 // Signup controller
 exports.signup = async (req, res) => {
-    console.log(req.body)
+
     const { firstName, lastName, email, password } = req.body;
 
     if (!firstName || !lastName || !email || !password) {
@@ -44,7 +44,7 @@ exports.signup = async (req, res) => {
 
 // Login controller
 exports.login = async (req, res) => {
-    console.log(req.body)
+ 
     const { email, password } = req.body;
 
     if (!email || !password) {

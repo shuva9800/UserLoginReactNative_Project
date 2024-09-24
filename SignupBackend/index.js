@@ -2,12 +2,14 @@
 const express = require('express');
 const authRoutes = require('./routes/user.route');
 const db = require('./config/database');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
 
 //middleware
 app.use(express.json());
+app.use(cors())
 
 //routing
 app.use('/api/v1/auth', authRoutes);
