@@ -1,6 +1,7 @@
 import { useRouter } from "expo-router";
 import { Text, View, Button } from "react-native";
 
+
 export default function Index() {
   const router = useRouter();
   const shift = () => {
@@ -15,7 +16,9 @@ export default function Index() {
       }}
     >
       <Text>Well Come To Home Page</Text>
+      <Text style={{color:"blue",paddingVertical:10}}>Press the below button for signup page</Text>
       <Button title="continue" onPress={shift} />
+     
     </View>
   );
 }

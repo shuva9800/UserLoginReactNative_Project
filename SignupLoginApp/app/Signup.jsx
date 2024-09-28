@@ -25,6 +25,8 @@ const Signup = () => {
       Toast.show({
         text1: "Success",
         text2: response.data.message,
+        position: 'top', 
+        visibilityTime: 4000,
       });
       router.navigate("/Login");
     } catch (error) {
