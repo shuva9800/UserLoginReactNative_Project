@@ -13,8 +13,9 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post(
-        "http://localhost:4000/api/v1/auth/signup",
+      // const response = await axios.post(
+      //   "http://localhost:4000/api/v1/auth/signup",
+      const response = await axios.post('https://native-backend-w04p.onrender.com/api/v1/auth/signup',
         {
           firstName,
           lastName,
